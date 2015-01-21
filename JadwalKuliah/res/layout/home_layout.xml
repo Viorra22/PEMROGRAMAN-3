@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="25dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:text="Lihat Jadwal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonMerah"
+        style="@style/ButtonText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/buttonmerah"
+        android:text="@string/senin" />
+
+    <Button
+        android:id="@+id/buttonBiru"
+        style="@style/ButtonText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonMerah"
+        android:background="@drawable/buttonbiru"
+        android:text="@string/selasa" />
+
+    <Button
+        android:id="@+id/buttonUngu"
+        style="@style/ButtonText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonBiru"
+        android:background="@drawable/buttonungu"
+        android:text="@string/rabu" />
+
+    <Button
+        android:id="@+id/buttonHijau"
+        style="@style/ButtonText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonUngu"
+        android:background="@drawable/buttonhijau"
+        android:text="@string/kamis" />
+
+    <Button
+        android:id="@+id/buttonOranye"
+        style="@style/ButtonText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonHijau"
+        android:background="@drawable/buttonoranye"
+        android:text="@string/jumat" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonOranye"
+        android:layout_alignRight="@+id/buttonOranye"
+        android:layout_below="@+id/buttonOranye"
+        android:layout_marginTop="17dp"
+        android:background="@color/blue"
+        android:text="@string/selasa" />
+
+</RelativeLayout>
